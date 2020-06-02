@@ -17,7 +17,7 @@ let bookData = {
 class BookReadCounter extends Component{
   render(){
     // also part of desstructing you can save your data into an var to shorten your code instead of writing everything all outyou can use the below code with const
-    const {total, horror, mystery, goal} = this.props
+    const {total, horroe, msytery, goals} = this.props
     // Once you have done this all you hav eto do it write the actually data property name.as seen below in line 25
     return (
       <section>

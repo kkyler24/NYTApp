@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 // adding comma and component in the above line allows us to remove react.Component(line 16) and just use the word component as displaye din line 16
-import {render} from 'react-dom';
-// the above code allows you to import redner from reactDOm and get rid of reactDOM.redner below and just use render 
+import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -16,18 +15,15 @@ let bookData = {
 // passing, rednering and displaying data in react
 class BookReadCounter extends Component{
   render(){
-    // also part of desstructing you can save your data into an var to shorten your code instead of writing everything all outyou can use the below code with const
-    const {total, horror, mystery, goal} = this.props
-    // Once you have done this all you hav eto do it write the actually data property name.as seen below in line 25
     return (
       <section>
         <div>
-    <p>Total Books: {total}</p>
+    <p>Total Books: {this.props.total}</p>
     <div>
-    <p>Horror: {horror}</p>
+    <p>Horror: {this.props.horror}</p>
     </div>
     <div>
-    <p>mystery: {mystery}</p>
+    <p>mystery: {this.props.mystery}</p>
     </div>
     <div>
     <p></p>
@@ -39,7 +35,7 @@ class BookReadCounter extends Component{
   }
 }
 // which makes things cleaner and allows you to skip out on havingto continiously create a new element with react. using jsx
-render(
+ReactDOM.render(
  <BookReadCounter
  total={bookData.total}
  horror = {bookData.horror}
