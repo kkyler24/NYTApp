@@ -7,13 +7,13 @@ import * as serviceWorker from './serviceWorker';
  class JSXDemo extends React.Component{
    render(){
      return(
-       <h1>"Yooo"</h1>
+       <
      )
    }
  }
 ReactDOM.render(
   // <React.StrictMode>
-    <JSXDemo/>,
+    title,
     
   // </React.StrictMode>,
   document.getElementById('root')

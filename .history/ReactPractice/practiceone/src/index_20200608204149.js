@@ -3,19 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
- 
- class JSXDemo extends React.Component{
-   render(){
-     return(
-       <h1>"Yooo"</h1>
-     )
-   }
- }
+ const title = React.createElement(
+   "h1",
+   {id: "title", className: "header"},
+   "Hello Word"
+ )
 ReactDOM.render(
   // <React.StrictMode>
-    <JSXDemo/>,
+    title,
     
-  // </React.StrictMode>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

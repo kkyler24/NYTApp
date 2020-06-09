@@ -4,16 +4,10 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
  
- class JSXDemo extends React.Component{
-   render(){
-     return(
-       <h1>"Yooo"</h1>
-     )
-   }
- }
+ class JSXDemo
 ReactDOM.render(
   // <React.StrictMode>
-    <JSXDemo/>,
+    title,
     
   // </React.StrictMode>,
   document.getElementById('root')
