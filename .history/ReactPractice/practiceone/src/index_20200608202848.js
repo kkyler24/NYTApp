@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import app from "./App";
 
 const title = React.createElement (
   "h1",
@@ -9,5 +8,5 @@ const title = React.createElement (
 
 ReactDOM.render(
   title,
-  document.getElementById("root")
+  document.getElementById
 )

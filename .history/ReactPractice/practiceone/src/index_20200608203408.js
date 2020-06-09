@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import app from "./App";
+import app 
 
-const title = React.createElement (
+cont title = React.createElement (
   "h1",
   {id:"title", className:"header"},
 )
