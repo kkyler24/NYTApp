@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Hello from "./Hello";
+import Hello from "Hello.js";
 
 class App extends React.Component{
   render(){
@@ -9,7 +9,6 @@ class App extends React.Component{
     <div>
       <Hello/>
     </div>
-    )
   }
 }
 // function App() {

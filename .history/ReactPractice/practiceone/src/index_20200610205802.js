@@ -1,20 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
  
-//  class JSXDemo extends React.Component{
-//    render(){
-//      return(
-//        <h1>"Yooo"</h1>
-//      )
-//    }
-//  }
+ class JSXDemo extends React.Component{
+   render(){
+     return(
+       <h1>"Yooo"</h1>
+     )
+   }
+ }
 ReactDOM.render(
-  
-  <App/>,
-
+  // <React.StrictMode>
+  <App
+    <JSXDemo/>,
+    
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
